@@ -1,0 +1,65 @@
+
+
+.footer {
+    /* background-color: var(--secondary-color);  */
+    color: var(--primary-color); /* White text */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between link sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 20px; /* Space below the link sections */
+}
+
+.footer-links, .footer-quick-links {
+    flex: 1; /* Equal space for links */
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px; /* Space between sections */
+}
+
+.footer-links h4, .footer-quick-links h4 {
+    margin-bottom: 10px; /* Space below headings */
+    font-size: 1.2rem; /* Headings font size */
+}
+
+.footer-links ul, .footer-quick-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links a, .footer-quick-links a {
+    text-decoration: none; /* Remove underline */
+    color: var(--primary-color); /* White text */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-links a:hover, .footer-quick-links a:hover {
+    color: #ff7f50; /* Orange on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--secondary-color); /* White border above copyright */
+    padding-top: 10px; /* Padding above copyright */
+    margin-top: 20px; /* Space above copyright */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margin */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack link sections vertically */
+        align-items: center; /* Center align */
+    }
+
+    .footer-links, .footer-quick-links {
+        text-align: center; /* Center align text */
+        margin: 20px 0; /* Space around sections */
+    }
+}

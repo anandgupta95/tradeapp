@@ -1,0 +1,71 @@
+
+.header {
+  height: 3rem;
+  top: 0.8rem;
+  background: #0033660d;
+  z-index: 3;
+  position: fixed;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 1rem 2rem; */
+  color: var(--primary-color);
+  transition: 0.5s ease-in-out
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color); /* Dark Blue for logo */
+}
+
+.nav {
+  display: flex;
+  gap:2rem; /* Default to flex for desktop */
+}
+
+
+.nav-links {
+ font-size: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color); /* Dark Blue text for links */
+  transition: color 0.3s;
+}
+
+.nav-links:hover {
+  color: #ff7f50; /* Change link color to Orange on hover */
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-icon {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  color: #ff7f50; /* Orange for mobile menu icon */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color); /* Light Gray background for mobile menu */
+    z-index: 1;
+  }
+
+  .nav.mobile {
+    display: flex; /* Show navigation links when mobile menu is active */
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show mobile menu icon */
+  }
+}

@@ -1,0 +1,63 @@
+
+
+.faq-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    text-align: center;
+    padding: 60px 20px; /* Add padding for spacing */
+    background-color: var(--secondary-color); /* Light Gray background */
+    color: var(--primary-color); /* Dark Blue text */
+}
+
+.faq-title {
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 40px; /* Space below title */
+}
+
+.faq-item {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit width */
+    margin: 10px 0; /* Space between items */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between; /* Space between text and arrow */
+    align-items: center; /* Center align */
+    padding: 15px; /* Padding */
+    background-color: #ffffff; /* White background for question */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.faq-question:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.arrow {
+    margin-left: 10px; /* Space between text and arrow */
+}
+
+.faq-answer {
+    padding: 15px; /* Padding for answer */
+    background-color: #f9f9f9; /* Light gray background for answer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 2rem; /* Reduce title font size on smaller screens */
+    }
+
+    .faq-question {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .faq-answer {
+        padding: 10px; /* Adjust padding */
+    }
+}

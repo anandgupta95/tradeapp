@@ -1,0 +1,55 @@
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    padding: 60px 20px; /* Add padding for spacing */
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+}
+
+.cta-title {
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.cta-subtitle {
+    font-size: 1.25rem; /* Subtitle font size */
+    margin-bottom: 30px; /* Spacing below subtitle */
+}
+
+.cta-button {
+    border-radius: 5rem;
+    background-color: #ff7f50; /* Orange button */
+    color: white; /* White text */
+    border: none;
+    padding: 12px 24px; /* Padding for button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+   
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #e76f51; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-title {
+        font-size: 2rem; /* Reduce title font size on smaller screens */
+    }
+    
+    .cta-subtitle {
+        font-size: 1rem; /* Reduce subtitle size */
+    }
+  
+    .cta-button {
+        font-size: 0.9rem; /* Reduce button font size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}

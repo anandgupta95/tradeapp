@@ -1,0 +1,77 @@
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    padding: 60px 20px; /* Add padding for spacing */
+    background-color: var(--secondary-color); /* Light Gray background */
+    color: var(--primary-color); /* Dark Blue text */
+    min-height: 100vh; /* Full viewport height */
+    position: relative; /* For positioning visuals */
+  }
+  
+  .hero-content {
+    z-index: 2; /* Ensure content is above visuals */
+  }
+  
+  .hero-title {
+    font-size: 2.5rem; /* Responsive font size */
+    margin: 0 0 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem; /* Smaller subtitle font size */
+    margin: 0 0 30px; /* Spacing below subtitle */
+  }
+  
+  .cta-button {
+    border-radius: 5rem;
+    background-color: #ff7f50; /* Orange CTA button */
+    color: white; /* White text */
+    border: none;
+    padding: 12px 24px; /* Padding for button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #e76f51; /* Darker shade on hover */
+  }
+  
+  /* Visual styles */
+  .hero-visual {
+    position: absolute; /* Position it behind content */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    z-index: 1; /* Behind content */
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  .hero-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the section */
+    opacity: 0.5; /* Slight transparency to let text stand out */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem; /* Reduce subtitle size */
+    }
+  
+    .cta-button {
+      font-size: 0.9rem; /* Reduce button font size */
+      padding: 10px 20px; /* Adjust button padding */
+    }
+  }
+  

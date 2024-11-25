@@ -1,0 +1,66 @@
+
+  
+  .about {
+ /* Light Gray background */
+    color: var(--primary-color); /* Dark Blue text */
+    padding: 60px 20px; /* Add padding for spacing */
+    text-align: center; /* Center text for readability */
+  }
+  
+  .about-content {
+    max-width: 800px; /* Maximum width for better readability */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .about-title {
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 20px; /* Spacing below title */
+  }
+  
+  .about-history,
+  .about-mission,
+  .about-certifications {
+    font-size: 1.125rem; /* Slightly larger than normal text */
+    margin: 15px 0; /* Vertical spacing */
+  }
+  
+  .about-mission-title,
+  .about-values-title,
+  .about-certifications-title,
+  .about-testimonials-title {
+    font-size: 1.5rem; /* Subsection titles */
+    margin-top: 30px; /* Spacing above section titles */
+  }
+  
+  .about-values {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .about-values li {
+    font-size: 1.125rem; /* Consistent font size for list items */
+    margin: 5px 0; /* Spacing between list items */
+  }
+  
+  .about-testimonial {
+    font-style: italic; /* Italicize testimonial */
+    font-size: 1.125rem; /* Slightly larger than normal text */
+    margin-top: 20px; /* Spacing above testimonial */
+    border-left: 4px solid #ff7f50; /* Highlight left border */
+    padding-left: 20px; /* Space between border and text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+  
+    .about-history,
+    .about-mission,
+    .about-certifications,
+    .about-testimonial {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+  }
+  
