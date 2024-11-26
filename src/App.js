@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Product from './components/Product'; 
-import Industry from './components/Industry'; 
-import Testimonials from './components/Testimonials';
-import CallToAction from './components/CallToAction'; 
-import ContactInfo from './components/ContactInfo'; 
-import FAQ from './components/FAQ';
-import Footer from './components/Footer'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './pages/Header';
+import Hero from './pages/Hero';
+import Categories from './pages/Categories';
+import Product from './pages/Product'; 
+import Industry from './pages/Industry'; 
+import Testimonials from './pages/Testimonials';
+import CallToAction from './pages/CallToAction'; 
+import ContactInfo from './pages/ContactInfo'; 
+import FAQ from './pages/FAQ';
+import Footer from './pages/Footer'; 
 import './App.css';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Header />
       <main>
       <Hero />
+      <Categories/>
       <Product />
       <Industry />
       <Testimonials />
@@ -24,6 +27,14 @@ function App() {
       <FAQ />
       <Footer/> 
      </main>
+     {/* <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Route>
+      </Routes>
+    </Router> */}
     </div>
   );
 }

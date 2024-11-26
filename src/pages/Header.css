@@ -62,7 +62,10 @@
   }
 
   .nav.mobile {
-    display: flex; /* Show navigation links when mobile menu is active */
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center; /* Show navigation links when mobile menu is active */
   }
 
   .mobile-menu-icon {

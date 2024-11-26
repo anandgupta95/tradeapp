@@ -1,0 +1,44 @@
+/* Accordion Container */
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  /* Accordion Header */
+  .accordion-header {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-header:hover {
+    background-color: #e2e2e2;
+  }
+  
+  /* Accordion Body */
+  .accordion-body {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Optional: Style the active header */
+  .accordion-header.active {
+    background-color: #dcdcdc;
+  }
+  

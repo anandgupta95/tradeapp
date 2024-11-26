@@ -1,0 +1,43 @@
+/* Center the loader container in the viewport */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    flex: 1;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Spinner animation */
+  .loader {
+    border: 6px solid #f3f3f3; /* Light gray background */
+    border-top: 6px solid #007bff; /* Blue color for the top border */
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  /* Spinner animation keyframes */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Message below the loader */
+  .loader-message {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
